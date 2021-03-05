@@ -2429,9 +2429,13 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
+
+
 #stats {
+		/* background: #151515 url("../images/testparallax.jpg"); */
+
 	background: #a16421;
-	padding-top: 7.2rem;
+	padding-top: 4rem;
 	padding-bottom: 4rem;
 	text-align: center;
 }
