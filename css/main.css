@@ -942,6 +942,9 @@ button.stroke, .button.stroke {
 	background: transparent !important;
 	border: 3px solid #313131;
 	line-height: 4.8rem;
+	
+	overflow: hidden;
+	position: relative;
 }
 button.stroke.medium, .button.stroke.medium {
 	line-height: 5.1rem !important;
@@ -951,8 +954,11 @@ button.stroke.large, .button.stroke.large {
 }
 button.stroke:hover, .button.stroke:hover {
 	border: 3px solid #f9a041;
-	color: #f9a041;
+
 }
+
+
+
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
