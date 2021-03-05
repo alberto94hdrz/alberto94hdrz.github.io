@@ -131,6 +131,12 @@
 
 
 
+/* ************************* TIPOGRAFIAS *********************** */
+p.lead {
+	font-family: "poppins-regular", sans-serif;
+}
+
+
 
 
 
@@ -345,7 +351,9 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
+	/* font-family: "lora-regular", serif */
+	font-family: "poppins-regular", sans-serif;
+
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
@@ -1735,6 +1743,14 @@ header .logo a {
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 }
+
+.about-content p {
+	font-family: "poppins-regular", sans-serif;
+	/* font-size: 1.8rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem; */
+}
+
 .about-content .info-list {
 	list-style: none;
 	margin-left: 0;
