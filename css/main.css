@@ -264,6 +264,23 @@ html {
 	}
 
 }
+
+@media only screen and (max-width:780px) {
+
+	#navbar_top{
+		visibility:visible;
+	}
+
+	#nav_hide
+	{
+		display: none;
+		visibility: hidden;	
+		height: 0px;
+	}
+
+}
+
+
 @media only screen and (max-width:768px) {
 	html {
 		font-size: 10px;
