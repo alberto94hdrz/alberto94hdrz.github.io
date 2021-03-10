@@ -18,6 +18,9 @@ $(function() {
 
 
 
+// **************************HIDE ME FUNCTION
+
+
 
 $(document).ready(function() {
     
@@ -40,13 +43,38 @@ $(document).ready(function() {
       }); 
   
   });
-  
 });
 
 
+// ************************** Icon bigger
 
 
 
+$(document).ready(function() {
+    
+  /* Every time the window is scrolled ... */
+  $(window).scroll( function(){
+  
+      /* Check the location of each desired element */
+      $('.hideme').each( function(i){
+          
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          
+          /* If the object is completely visible in the window, fade it it */
+          if( bottom_of_window > bottom_of_object ){
+              
+              $(this).animate({'opacity':'1'},500);
+                  
+          }
+          
+      }); 
+  
+  });
+});
+
+
+// *****************************CLIENTS CARROUSEL
 
 
 $(function() {
@@ -92,5 +120,5 @@ $(function() {
 
   $("nav#main-nav-wrap > ul > li").on("click", function () {
     $("nav#main-nav-wrap").hide()
-});
+  });
   // ********************************************ESCONDER DIV

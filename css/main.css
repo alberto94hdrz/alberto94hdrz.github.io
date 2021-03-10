@@ -41,14 +41,54 @@
 
 
 
+/* ************************** Animation text  */
+
+.text-appear {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
 
 /* ******************************************************* LENGUAGE BUTTONS */
-
-.animate__animated.animate__bounce {
-	--animate-duration: 5s;
-  }
-
-
   
 #english_button  {
 	  background-color: rgba(255, 0, 0, 0);
@@ -165,19 +205,19 @@ p.lead {
 
 /* Add a black background color to the top navigation */
 .topnav {
-background-color: #333;
-overflow: hidden;
+	background-color: #333;
+	overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-float: left;
-color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 14px;
-font-family: "poppins-regular", sans-serif;
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: "poppins-regular", sans-serif;
 
 }
 
@@ -946,6 +986,15 @@ button.stroke, .button.stroke {
 	overflow: hidden;
 	position: relative;
 }
+
+
+.aboutme:hover{
+	background: orange !important;
+	transition: all 3s;
+}
+
+
+
 button.stroke.medium, .button.stroke.medium {
 	line-height: 5.1rem !important;
 }
@@ -953,8 +1002,8 @@ button.stroke.large, .button.stroke.large {
 	line-height: 5.4rem !important;
 }
 button.stroke:hover, .button.stroke:hover {
-	border: 3px solid #f9a041;
-
+	border: 3px solid #a31010;
+	/* background-color: yellow; */
 }
 
 
