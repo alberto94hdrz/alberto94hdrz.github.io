@@ -2050,7 +2050,7 @@ header .logo a {
 	color: rgba(255, 255, 255, 0.6);
 }
 #portfolio .folio-item:hover .overlay {
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(226, 146, 72, 0.63);
 }
 #portfolio .folio-item:hover .folio-item-cell {
 	left: 0;
@@ -2637,6 +2637,8 @@ header .logo a {
 .contact-info h5 {
 	color: #f9a041;
 }
+
+
 
 /**
  * loader animation - (_layout.scss)
