@@ -1,10 +1,5 @@
-/**
- * =================================================================== 
- *
- *  Kards v1.0 Main Stylesheet
- *  url: styleshout.com
- *  03-01-2016
- *  ------------------------------------------------------------------
+
+ /* *  ------------------------------------------------------------------
  *  TOC:
  *  01. webfonts and iconfonts
  *  02. base style overrides
@@ -25,8 +20,8 @@
  *  17. contact
  *  18. footer
  *
- * =================================================================== 
- */
+ * ===================================================================  */
+ 
 
 
 /** 
@@ -35,6 +30,7 @@
  *
  * ------------------------------------------------------------------- 
  */
+
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
@@ -117,14 +113,6 @@
   color:white;
 }
 
-  
-  /* #english_button:focus {     
-	  background-color:rgb(255, 255, 255); 
-	  transition-duration: 0.6s;   
-	  color: black;
-  } */
-
-
 /* ******************************************************* LENGUAGE BUTTONS */
 
 
@@ -203,13 +191,12 @@ p.lead {
 	color:white;
  }
 
-/* Add a black background color to the top navigation */
 .topnav {
 	background-color: #333;
 	overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+/* Links dentro de barra */
 .topnav a {
 	float: left;
 	color: #f2f2f2;
@@ -232,13 +219,13 @@ p.lead {
 	
 	}
 
-/* Change the color of links on hover */
+/* Links dentro de barra */
 .topnav a:hover {
 background-color: rgb(190, 110, 19);
 color: black;
 }
 
-/* Add a color to the active/current link */
+/* Color de activo */
 .topnav a.active {
 background-color: #000000;
 color: white;
@@ -365,7 +352,7 @@ a:hover, a:focus, a:active {
 
 /** 
  * ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss)
+ * 03. typography 
  *
  * ------------------------------------------------------------------- 
  */
@@ -711,7 +698,7 @@ img.pull-left {
 
 /** 
  * ===================================================================
- * 04. preloader - (_preloader-1.scss)
+ * 04. preloader
  *
  * ------------------------------------------------------------------- 
  */
@@ -774,7 +761,7 @@ img.pull-left {
 
 /** 
  * ===================================================================
- * 05. forms - (_forms.scss)
+ * 05. forms
  *
  * ------------------------------------------------------------------- 
  */
@@ -912,7 +899,7 @@ label > input[type="checkbox"], label > input[type="radio"] {
 
 /** 
  * ===================================================================
- * 06. buttons - (_button-essentials.scss)
+ * 06. buttons 
  *
  * ------------------------------------------------------------------- 
  */
@@ -1073,119 +1060,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #bba31b;
 }
 
-/**
- * additional typo styles - (_additional-typo.scss)
- * -------------------------------------------------------------------
- */
-
-/**
- * drop cap 
- */
-.drop-cap:first-letter {
-	float: left;
-	margin: 0;
-	padding: 1.5rem .6rem 0 0;
-	font-size: 8.4rem;
-	font-family: "poppins-bold", sans-serif;
-	line-height: 6rem;
-	text-indent: 0;
-	background: transparent;
-	color: #313131;
-}
-
-/**
- * line definition style
- */
-.lining dt, .lining dd {
-	display: inline;
-	margin: 0;
-}
-.lining dt + dt:before, .lining dd + dt:before {
-	content: "\A";
-	white-space: pre;
-}
-.lining dd + dd:before {
-	content: ", ";
-}
-.lining dd + dd:before {
-	content: ", ";
-}
-.lining dd:before {
-	content: ": ";
-	margin-left: -0.2em;
-}
-
-/**
- * dictionary definition style
- */
-.dictionary-style dt {
-	display: inline;
-	counter-reset: definitions;
-}
-.dictionary-style dt + dt:before {
-	content: ", ";
-	margin-left: -0.2em;
-}
-.dictionary-style dd {
-	display: block;
-	counter-increment: definitions;
-}
-.dictionary-style dd:before {
-	content: counter(definitions, decimal) ". ";
-}
-
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
- *
- * --------------------------------------------------------------------- 
- */
-.pull-quote {
-	position: relative;
-	padding: 2.1rem 3rem 2.1rem 0px;
-}
-.pull-quote:before, .pull-quote:after {
-	height: 1em;
-	position: absolute;
-	font-size: 8rem;
-	font-family: Arial, Sans-Serif;
-	color: #333;
-}
-.pull-quote:before {
-	content: "\201C";
-	top: 33px;
-	left: 0;
-}
-.pull-quote:after {
-	content: '\201D';
-	bottom: -33px;
-	right: 0;
-}
-.pull-quote blockquote {
-	margin: 0;
-}
-.pull-quote blockquote:before {
-	content: none;
-}
-
-/** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
- *
- * Extend this object into your markup.
- *
+/*
  * ---------------------------------------------------------------------
  */
 .stats-tabs {
@@ -1491,7 +1366,7 @@ header .logo a {
 	background-color: rgba(255, 0, 119, 0);
 }
 .menu-toggle.is-clicked span::before, .menu-toggle.is-clicked span::after {
-	background-color: #f9a041;
+	background-color: #d89956;
 	-moz-transition-delay: 0s, 0.2s;
 	-o-transition-delay: 0s, 0.2s;
 	-webkit-transition-delay: 0s, 0.2s;
@@ -1548,7 +1423,7 @@ header .logo a {
 }
 .main-navigation li a:hover {
 	color: #f9a041;
-	padding-left: 1rem;
+	padding-left: 1.5rem;
 }
 .main-navigation li.current > a {
 	background: none;
@@ -1584,7 +1459,7 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 10. intro - (_layout.scss) 
+ * 10. intro 
  *
  * ------------------------------------------------------------------- 
  */
@@ -2286,7 +2161,7 @@ header .logo a {
 }
 
 /**
- * transition effect for modal popup - (_layout.scss)
+ * transition modal popup - (_layout.scss)
  * ------------------------------------------------------------------ 
  */
 
@@ -2345,6 +2220,9 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
+
+
+ 
 #cta {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
